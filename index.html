@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarjeta Clase</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HOVER */
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ENCABEZADO VISUAL */
+.card-header {
+    height: 140px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* CONTENIDO */
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* TIPOGRAFÍA */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+}
+
+.card-teacher {
+    font-size: 1rem;
+    text-align: center;
+    color: #666;
+}
+
+/* BADGES - FLEXBOX CON GAP */
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: #e9eef5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+/* BOTÓN */
+.card-button {
+    margin-top: auto;
+}
+
+.card-button button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2a5298;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button button:hover {
+    background-color: #1e3c72;
+}
+
+/* RESPONSIVE DESKTOP */
+@media (min-width: 768px) {
+    .card {
+        max-width: 400px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="card-header"></div>
+
+    <div class="card-body">
+        <div>
+            <h2 class="card-title">Programación Web</h2>
+            <p class="card-teacher">Docente: Ing. Carlos Mendoza</p>
+        </div>
+
+        <div class="badges">
+            <span class="badge">ING-402</span>
+            <span class="badge">Gpo1</span>
+            <span class="badge">Aula E-201</span>
+        </div>
+
+        <div class="card-button">
+            <button>Ingresar al Aula Virtual</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
